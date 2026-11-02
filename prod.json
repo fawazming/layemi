@@ -1,0 +1,46 @@
+[
+  {
+    "Brand": "LAYEMITURBAN",
+    "Collection": "AUTOGELE & TURBAN COLLECTION",
+    "Item_Name": "Premium Orange Auto-Gele",
+    "Price": "10,000 NGN",
+    "Status": "Ready-to-Wear",
+    "Material": "Premium Aso-Oke",
+    "Color": "Orange"
+  },
+  {
+    "Brand": "LAYEMITURBAN",
+    "Collection": "AUTOGELE & TURBAN COLLECTION",
+    "Item_Name": "Royal Blue Ruffle Turban Cap",
+    "Price": "10,000 NGN",
+    "Style": "Side Ruffle",
+    "Details": "Blue Sequin Base",
+    "Color": "Royal Blue"
+  },
+  {
+    "Brand": "LAYEMITURBAN",
+    "Collection": "AUTOGELE & TURBAN COLLECTION",
+    "Item_Name": "Gold Side Ruffles Turban Cap",
+    "Price": "15,000 NGN",
+    "Style": "Side Ruffles",
+    "Details": "Custom / Available for Delivery to Ibadan",
+    "Color": "Elegant Gold"
+  },
+  {
+    "Brand": "LAYEMITURBAN",
+    "Collection": "AUTOGELE & TURBAN COLLECTION",
+    "Item_Name": "Classic Red Polka-Dot Turban",
+    "Price": "4,000 NGN",
+    "Pattern": "Red Polka-Dot",
+    "Details": "Knot Design",
+    "Color": "Classic Red"
+  },
+  {
+    "Order_Instructions": "To order, send product screenshots to WhatsApp: +234 903 277 1661",
+    "Contact": {
+      "WhatsApp": "+234 903 277 1661",
+      "Instagram": "@layemiturban"
+    },
+    "Shipping": "Available Worldwide / Pick up at Ikorodu, Lagos"
+  }
+]

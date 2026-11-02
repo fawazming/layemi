@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAYEMITURBAN — Handcrafted Autogele & Turbans</title>
+  <meta name="description" content="Discover handcrafted autogele, turbans and headwraps by LAYEMITURBAN. Made in Lagos, worn worldwide. Shop signature, bridal and festive editions." />
+  <meta name="theme-color" content="#17140f" />
+  <meta property="og:title" content="LAYEMITURBAN — Handcrafted Autogele & Turbans" />
+  <meta property="og:description" content="Heirloom autogele and sculptural turbans, hand-finished in Lagos. Ready-to-wear, bridal and festive editions. Worldwide delivery." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/orange-autogele.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2317140f'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='%23c7a76c' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#17140f',
+            espresso: '#2b241b',
+            cream: '#f8f4ec',
+            sand: '#efe8db',
+            gold: '#b08d57',
+            goldlight: '#d8bd8d',
+            wine: '#6f2c35'
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Jost', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 24px 60px -30px rgba(23,20,15,.35)',
+            lift: '0 30px 80px -40px rgba(23,20,15,.55)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-cream font-sans text-ink antialiased selection:bg-goldlight/60">
+
+  <!-- Announcement -->
+  <div class="bg-ink text-cream/80 text-[10px] sm:text-[11px] tracking-[0.22em] uppercase">
+    <div class="mx-auto flex max-w-7xl items-center justify-center gap-3 px-4 py-2.5 text-center">
+      <span class="hidden sm:inline text-goldlight">✦</span>
+      <p>Complimentary delivery on orders over ₦75,000 &nbsp;·&nbsp; World wide shipping</p>
+      <span class="hidden sm:inline text-goldlight">✦</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="site-header" class="sticky top-0 z-40 border-b border-ink/10 bg-cream/80 backdrop-blur-xl transition-all duration-300">
+    <div class="mx-auto flex h-[68px] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <button class="grid h-9 w-9 place-items-center rounded-full hover:bg-sand lg:hidden" data-open-mobile aria-label="Open menu">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <a href="#top" class="group flex items-baseline gap-1.5">
+        <span class="font-display text-[25px] font-semibold tracking-[0.14em] leading-none">LAYEMITURBAN</span>
+        <span class="hidden h-1.5 w-1.5 rounded-full bg-gold transition group-hover:scale-125 sm:block"></span>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-[11px] font-medium uppercase tracking-[0.2em] lg:flex">
+        <a class="nav-link" href="#shop" data-filter-link="all">Shop</a>
+        <a class="nav-link" href="#shop" data-filter-link="Auto-Gele">Auto-Gele</a>
+        <a class="nav-link" href="#shop" data-filter-link="Turban Caps">Turbans</a>
+        <a class="nav-link" href="#story">Our Story</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-0.5 sm:gap-1">
+        <button class="icon-btn" data-open-search aria-label="Search">
+          <svg class="h-[19px] w-[19px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn hidden sm:grid" data-open-wishlist aria-label="Wishlist">
+          <svg class="h-[19px] w-[19px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 6.7 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg>
+          <span id="wishlist-count" class="count-badge hidden">0</span>
+        </button>
+        <button class="icon-btn" data-open-account aria-label="Account">
+          <svg class="h-[19px] w-[19px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path stroke-linecap="round" d="M4.5 20c.7-3.6 3.7-5.5 7.5-5.5s6.8 1.9 7.5 5.5"/></svg>
+        </button>
+        <button class="icon-btn" data-open-cart aria-label="Cart">
+          <svg class="h-[19px] w-[19px]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 8h12l-1 12H7L6 8Z"/><path stroke-linecap="round" d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span id="cart-count" class="count-badge hidden">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="pointer-events-none absolute -right-40 -top-32 h-[560px] w-[560px] rounded-full bg-goldlight/20 blur-3xl"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-12 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:gap-16 lg:px-8 lg:pb-24 lg:pt-16">
+        <div class="relative z-10 max-w-xl">
+          <p class="reveal inline-flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.32em] text-gold">
+            <span class="h-px w-10 bg-gold"></span> The Art of the Wrap
+          </p>
+          <h1 class="reveal mt-6 font-display text-[clamp(3.1rem,7vw,5.8rem)] font-medium leading-[0.92] tracking-[-0.02em]">
+            Crowned in <em class="font-normal italic text-gold">culture</em>,<br class="hidden sm:block" /> wrapped in <em class="font-normal italic text-gold">grace</em>.
+          </h1>
+          <p class="reveal mt-7 max-w-md text-[15px] font-light leading-relaxed text-ink/65">
+            Heirloom autogele and sculptural turbans, hand-finished in Lagos for the woman who carries her heritage like jewellery.
+          </p>
+          <div class="reveal mt-9 flex flex-wrap items-center gap-3">
+            <a href="#shop" class="btn-primary">Shop the collection
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></svg>
+            </a>
+            <a href="#story" class="btn-ghost">Our story</a>
+          </div>
+          <div class="reveal mt-12 flex items-center gap-7">
+            <div class="flex -space-x-2.5">
+              <span class="review-avatar bg-[url('assets/img/red-turban.png')] bg-cover"></span>
+              <span class="review-avatar bg-[url('assets/img/gold-turban.png')] bg-cover"></span>
+              <span class="review-avatar bg-[url('assets/img/royal-blue-turban.png')] bg-cover"></span>
+            </div>
+            <div>
+              <div class="flex items-center gap-1 text-gold">
+                <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8L10 1.6Z"/></svg>
+                <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8L10 1.6Z"/></svg>
+                <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8L10 1.6Z"/></svg>
+                <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8L10 1.6Z"/></svg>
+                <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8L10 1.6Z"/></svg>
+              </div>
+              <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-ink/50">Loved by 2,400+ women worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal relative mx-auto w-full max-w-[520px]">
+          <div class="absolute -left-4 top-8 hidden h-40 w-40 rounded-full border border-gold/30 sm:block"></div>
+          <div class="absolute -bottom-6 -left-6 hidden w-40 rotate-[-6deg] overflow-hidden rounded-[2px] shadow-soft sm:block lg:w-48">
+            <img src="assets/img/gold-turban.png" alt="Gold side ruffles turban" class="h-52 w-full object-cover" />
+          </div>
+          <div class="relative ml-auto w-[88%] overflow-hidden rounded-[160px_160px_2px_2px] border border-ink/5 shadow-lift">
+            <img src="assets/img/orange-autogele.png" alt="Premium orange auto-gele" class="aspect-[3/4] w-full object-cover" />
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink/50 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-cream">
+              <p class="text-[9px] uppercase tracking-[0.28em] text-cream/70">Signature piece</p>
+              <p class="mt-1 font-display text-2xl">Premium Orange Auto-Gele</p>
+              <p class="mt-0.5 text-xs text-cream/70">₦10,000</p>
+            </div>
+          </div>
+          <div class="absolute right-0 top-10 hidden rounded-full bg-cream/90 px-4 py-2 text-[9px] uppercase tracking-[0.22em] shadow-soft backdrop-blur sm:block">Hand-finished · Lagos</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="overflow-hidden border-y border-ink/10 bg-sand/60 py-3.5">
+      <div class="marquee flex w-max items-center gap-10 text-[10px] uppercase tracking-[0.28em] text-ink/55">
+        <span class="flex items-center gap-10">
+          <span>Premium Aso-Oke</span><span class="text-gold">✦</span><span>Ready-to-Wear</span><span class="text-gold">✦</span>
+          <span>Made in Lagos</span><span class="text-gold">✦</span><span>Worldwide Delivery</span><span class="text-gold">✦</span>
+          <span>Bridal Commissions</span><span class="text-gold">✦</span><span>Pickup in Ikorodu</span><span class="text-gold">✦</span>
+        </span>
+        <span class="flex items-center gap-10" aria-hidden="true">
+          <span>Premium Aso-Oke</span><span class="text-gold">✦</span><span>Ready-to-Wear</span><span class="text-gold">✦</span>
+          <span>Made in Lagos</span><span class="text-gold">✦</span><span>Worldwide Delivery</span><span class="text-gold">✦</span>
+          <span>Bridal Commissions</span><span class="text-gold">✦</span><span>Pickup in Ikorodu</span><span class="text-gold">✦</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Shop -->
+    <section id="shop" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <p class="eyebrow">The Collection</p>
+          <h2 class="mt-3 font-display text-4xl font-medium tracking-tight sm:text-5xl">Wraps worth <em class="italic text-gold">inheriting</em>.</h2>
+          <p class="mt-3 max-w-lg text-sm font-light leading-relaxed text-ink/60">Sixteen pieces. Four silhouettes. Endless ways to be seen. Each wrap is finished by hand in our Ikorodu atelier.</p>
+        </div>
+        <div class="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-ink/50">
+          <span id="product-count" class="text-ink">16</span> pieces curated
+        </div>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="mt-10 flex flex-col gap-4 border-y border-ink/10 py-4 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex flex-wrap items-center gap-2" id="filter-bar">
+          <button class="filter-chip is-active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="Auto-Gele">Auto-Gele</button>
+          <button class="filter-chip" data-filter="Turban Caps">Turban Caps</button>
+          <button class="filter-chip" data-filter="Bridal">Bridal</button>
+          <button class="filter-chip" data-filter="Festive">Festive</button>
+          <button class="filter-chip" data-filter="under10">Under ₦10,000</button>
+        </div>
+        <div class="flex items-center gap-3">
+          <label class="relative">
+            <svg class="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-ink/40" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.5-3.5"/></svg>
+            <input id="search-input" type="search" placeholder="Search pieces" class="h-10 w-full rounded-full border border-ink/15 bg-transparent pl-9 pr-4 text-xs tracking-wide outline-none transition focus:border-gold focus:ring-1 focus:ring-gold/30 sm:w-52" />
+          </label>
+          <select id="sort-select" aria-label="Sort products" class="h-10 rounded-full border border-ink/15 bg-transparent px-4 text-xs tracking-wide outline-none focus:border-gold">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price · Low to high</option>
+            <option value="price-desc">Price · High to low</option>
+            <option value="name">Name · A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="product-grid" class="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 lg:grid-cols-4"></div>
+      <div id="empty-state" class="hidden py-24 text-center">
+        <p class="font-display text-3xl">No pieces found</p>
+        <p class="mt-2 text-sm text-ink/55">Try a different filter or search term.</p>
+        <button class="btn-ghost mt-6" id="reset-filters">Reset filters</button>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="relative overflow-hidden bg-ink text-cream">
+      <div class="pointer-events-none absolute -left-24 top-20 h-80 w-80 rounded-full bg-gold/10 blur-3xl"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8 lg:py-28">
+        <div class="relative order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="overflow-hidden rounded-t-[100px] border border-cream/10">
+              <img src="assets/img/red-turban.png" alt="Classic red polka dot turban" class="aspect-[3/4] w-full object-cover" loading="lazy" />
+            </div>
+            <div class="mt-12 overflow-hidden rounded-b-[100px] border border-cream/10">
+              <img src="assets/img/royal-blue-turban.png" alt="Royal blue ruffle turban cap" class="aspect-[3/4] w-full object-cover" loading="lazy" />
+            </div>
+          </div>
+          <div class="absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-full border border-gold/30 bg-ink/90 px-5 py-3 backdrop-blur">
+            <span class="font-display text-lg italic text-gold">Est. Ikorodu</span>
+            <span class="h-4 w-px bg-cream/20"></span>
+            <span class="text-[9px] uppercase tracking-[0.2em] text-cream/60">Lagos, NG</span>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="eyebrow text-goldlight">Our Story</p>
+          <h2 class="mt-4 font-display text-4xl font-medium leading-[1.05] tracking-tight sm:text-5xl">Every wrap begins with a woman.</h2>
+          <p class="mt-6 text-sm font-light leading-relaxed text-cream/65">
+            LAYEMITURBAN was born from a simple belief: the way a woman crowns herself is a language. Our auto-gele and turbans are cut, pleated and hand-finished in small batches using premium aso-oke, sequin bases and structural fabrics that hold their architecture from morning to midnight.
+          </p>
+          <p class="mt-4 text-sm font-light leading-relaxed text-cream/65">
+            No two pieces are identical. No two women are either.
+          </p>
+          <div class="mt-9 grid grid-cols-3 gap-5 border-t border-cream/15 pt-7">
+            <div><p class="font-display text-3xl text-goldlight">2.4k</p><p class="mt-1 text-[9px] uppercase tracking-[0.18em] text-cream/50">Happy clients</p></div>
+            <div><p class="font-display text-3xl text-goldlight">16</p><p class="mt-1 text-[9px] uppercase tracking-[0.18em] text-cream/50">Curated pieces</p></div>
+            <div><p class="font-display text-3xl text-goldlight">24</p><p class="mt-1 text-[9px] uppercase tracking-[0.18em] text-cream/50">Countries shipped</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience strip -->
+    <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div class="grid gap-8 border-b border-ink/10 pb-14 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="reveal">
+          <div class="feature-icon"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z"/><path stroke-linecap="round" d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg></div>
+          <h3 class="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em]">Signature packaging</h3>
+          <p class="mt-2 text-xs font-light leading-relaxed text-ink/55">Every order arrives in a reusable keepsake box, wrapped in tissue and sealed with our gold emblem.</p>
+        </div>
+        <div class="reveal">
+          <div class="feature-icon"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z"/></svg></div>
+          <h3 class="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em]">Worldwide delivery</h3>
+          <p class="mt-2 text-xs font-light leading-relaxed text-ink/55">From Ikorodu to London, Houston to Abuja — tracked shipping with duties calculated at checkout.</p>
+        </div>
+        <div class="reveal">
+          <div class="feature-icon"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-4.3-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.7-7 10-7 10Z"/></svg></div>
+          <h3 class="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em]">Hand-finished</h3>
+          <p class="mt-2 text-xs font-light leading-relaxed text-ink/55">Pleated, pinned and stitched by hand in small batches. Ready-to-wear, made to be kept.</p>
+        </div>
+        <div class="reveal">
+          <div class="feature-icon"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.2 7.8 8 9 4.8-1.2 8-4.5 8-9V6l-8-3Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5"/></svg></div>
+          <h3 class="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em]">Secure checkout</h3>
+          <p class="mt-2 text-xs font-light leading-relaxed text-ink/55">Card, bank transfer or pay on delivery in Lagos. Your details stay private, always.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-sand/50">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="text-center">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="mt-3 font-display text-4xl font-medium">Worn, loved, <em class="italic text-gold">repeated</em>.</h2>
+        </div>
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          <figure class="reveal rounded-2xl border border-ink/10 bg-cream p-7">
+            <div class="flex gap-1 text-gold">★★★★★</div>
+            <blockquote class="mt-4 font-display text-xl leading-snug">“The orange auto-gele held its shape through an entire Lagos wedding. I have never received so many compliments.”</blockquote>
+            <figcaption class="mt-5 text-[10px] uppercase tracking-[0.18em] text-ink/50">Adaeze O. — Lagos</figcaption>
+          </figure>
+          <figure class="reveal rounded-2xl border border-ink/10 bg-cream p-7">
+            <div class="flex gap-1 text-gold">★★★★★</div>
+            <blockquote class="mt-4 font-display text-xl leading-snug">“Ordered the gold ruffle turban from London. It arrived in the most beautiful packaging, two weeks early.”</blockquote>
+            <figcaption class="mt-5 text-[10px] uppercase tracking-[0.18em] text-ink/50">Simi A. — London</figcaption>
+          </figure>
+          <figure class="reveal rounded-2xl border border-ink/10 bg-cream p-7">
+            <div class="flex gap-1 text-gold">★★★★★</div>
+            <blockquote class="mt-4 font-display text-xl leading-snug">“The red polka-dot turban is my everyday crown. Light, comfortable and so effortlessly elegant.”</blockquote>
+            <figcaption class="mt-5 text-[10px] uppercase tracking-[0.18em] text-ink/50">Tolu B. — Abuja</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="contact" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="relative overflow-hidden rounded-3xl bg-ink px-6 py-14 text-center text-cream sm:px-12 lg:py-20">
+        <div class="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-gold/10 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-20 right-0 h-72 w-72 rounded-full bg-wine/20 blur-3xl"></div>
+        <p class="relative text-[10px] uppercase tracking-[0.3em] text-goldlight">The inner circle</p>
+        <h2 class="relative mx-auto mt-4 max-w-2xl font-display text-4xl font-medium leading-tight sm:text-5xl">First access to new wraps & private commissions.</h2>
+        <p class="relative mx-auto mt-4 max-w-md text-sm font-light text-cream/55">Join the list. No noise — just new pieces, restocks and the occasional note from the atelier.</p>
+        <form id="newsletter-form" class="relative mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
+          <input type="email" required placeholder="Your email address" class="h-12 flex-1 rounded-full border border-cream/20 bg-cream/5 px-5 text-sm text-cream placeholder:text-cream/35 outline-none focus:border-goldlight" />
+          <button class="btn-gold h-12 justify-center">Join the list</button>
+        </form>
+        <div class="relative mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[10px] uppercase tracking-[0.18em] text-cream/45">
+          <a class="transition hover:text-goldlight" href="https://wa.me/2349032771661" target="_blank" rel="noopener">WhatsApp · +234 903 277 1661</a>
+          <a class="transition hover:text-goldlight" href="https://instagram.com/layemiturban" target="_blank" rel="noopener">Instagram · @layemiturban</a>
+          <span>Pickup · Ikorodu, Lagos</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-ink/10 bg-sand/40">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div class="lg:col-span-2">
+        <a href="#top" class="font-display text-2xl font-semibold tracking-[0.14em]">LAYEMITURBAN</a>
+        <p class="mt-4 max-w-sm text-xs font-light leading-relaxed text-ink/55">Handcrafted autogele and turbans from Ikorodu, Lagos. Worn by women who carry culture beautifully.</p>
+        <div class="mt-6 flex gap-2">
+          <a href="https://instagram.com/layemiturban" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/2349032771661" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.3 0-.4.1-.6l.4-.5c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.7.7-.9 1.7-.7 2.7.4 1.6 1.4 3.1 3.3 4.3 1.9 1.2 3.2 1.1 4 .8.5-.2 1.2-.6 1.4-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink/45">Shop</h4>
+        <ul class="mt-4 space-y-2.5 text-xs font-light text-ink/65">
+          <li><a class="footer-link" href="#shop">All pieces</a></li>
+          <li><a class="footer-link" href="#shop" data-filter-link="Auto-Gele">Auto-Gele</a></li>
+          <li><a class="footer-link" href="#shop" data-filter-link="Turban Caps">Turban caps</a></li>
+          <li><a class="footer-link" href="#shop" data-filter-link="Bridal">Bridal editions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink/45">Care</h4>
+        <ul class="mt-4 space-y-2.5 text-xs font-light text-ink/65">
+          <li><a class="footer-link" href="https://wa.me/2349032771661" target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a class="footer-link" href="#contact">Shipping & delivery</a></li>
+          <li><a class="footer-link" href="#contact">Returns</a></li>
+          <li><button class="footer-link" data-open-account>My account</button></li>
+          <li><button class="footer-link" data-open-wishlist>Wishlist</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-ink/10">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-[10px] uppercase tracking-[0.16em] text-ink/40 sm:flex-row sm:px-6 lg:px-8">
+        <p>© <span id="year"></span> LAYEMITURBAN. All rights reserved.</p>
+        <p>Crafted with care in Lagos, Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-[70] hidden">
+    <div class="absolute inset-0 bg-ink/50 backdrop-blur-sm" data-close-mobile></div>
+    <aside class="drawer-panel absolute inset-y-0 left-0 flex w-[min(86vw,360px)] -translate-x-full flex-col bg-cream p-6 shadow-2xl transition-transform duration-300">
+      <div class="flex items-center justify-between">
+        <span class="font-display text-xl font-semibold tracking-[0.14em]">LAYEMITURBAN</span>
+        <button class="icon-btn" data-close-mobile aria-label="Close menu">✕</button>
+      </div>
+      <nav class="mt-10 flex flex-col gap-1">
+        <a class="mobile-link" href="#shop" data-close-mobile>Shop all</a>
+        <a class="mobile-link" href="#shop" data-filter-link="Auto-Gele" data-close-mobile>Auto-Gele</a>
+        <a class="mobile-link" href="#shop" data-filter-link="Turban Caps" data-close-mobile>Turban caps</a>
+        <a class="mobile-link" href="#shop" data-filter-link="Bridal" data-close-mobile>Bridal</a>
+        <a class="mobile-link" href="#story" data-close-mobile>Our story</a>
+        <a class="mobile-link" href="#contact" data-close-mobile>Contact</a>
+      </nav>
+      <div class="mt-auto space-y-3 border-t border-ink/10 pt-6 text-xs text-ink/60">
+        <button class="flex w-full items-center gap-3" data-open-account data-close-mobile><span class="text-base">◯</span> Account</button>
+        <button class="flex w-full items-center gap-3" data-open-wishlist data-close-mobile><span class="text-base">♡</span> Wishlist</button>
+        <a href="https://wa.me/2349032771661" target="_blank" rel="noopener" class="flex items-center gap-3"><span class="text-base">✆</span> +234 903 277 1661</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Search overlay -->
+  <div id="search-overlay" class="fixed inset-0 z-[70] hidden">
+    <div class="absolute inset-0 bg-ink/40 backdrop-blur-sm" data-close-search></div>
+    <div class="relative mx-auto mt-24 w-[min(92vw,640px)] rounded-2xl border border-ink/10 bg-cream p-6 shadow-lift">
+      <div class="flex items-center gap-3 border-b border-ink/15 pb-3">
+        <svg class="h-5 w-5 text-ink/40" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.5-3.5"/></svg>
+        <input id="overlay-search" type="search" placeholder="Search auto-gele, turbans, bridal…" class="h-10 flex-1 bg-transparent text-lg font-light outline-none placeholder:text-ink/30" />
+        <button class="text-xs uppercase tracking-widest text-ink/40 hover:text-ink" data-close-search>Esc</button>
+      </div>
+      <div id="search-results" class="mt-4 max-h-[50vh] space-y-1 overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <!-- Cart drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-[80] hidden">
+    <div class="absolute inset-0 bg-ink/50 backdrop-blur-sm" data-close-cart></div>
+    <aside class="drawer-panel absolute inset-y-0 right-0 flex w-[min(94vw,450px)] translate-x-full flex-col bg-cream shadow-2xl transition-transform duration-300">
+      <div class="flex items-center justify-between border-b border-ink/10 px-6 py-5">
+        <div>
+          <h2 class="font-display text-2xl">Your bag</h2>
+          <p class="mt-0.5 text-[10px] uppercase tracking-[0.18em] text-ink/45"><span id="cart-drawer-count">0</span> pieces</p>
+        </div>
+        <button class="icon-btn" data-close-cart aria-label="Close cart">✕</button>
+      </div>
+      <div class="border-b border-ink/10 px-6 py-4">
+        <div class="flex justify-between text-[10px] uppercase tracking-[0.14em] text-ink/55">
+          <span id="shipping-message">Free shipping over ₦75,000</span>
+          <span id="shipping-percent">0%</span>
+        </div>
+        <div class="mt-2 h-1.5 overflow-hidden rounded-full bg-ink/10">
+          <div id="shipping-bar" class="h-full rounded-full bg-gold transition-all duration-500" style="width:0%"></div>
+        </div>
+      </div>
+      <div id="cart-items" class="flex-1 overflow-y-auto px-6 py-4"></div>
+      <div class="border-t border-ink/10 bg-cream px-6 py-5">
+        <div class="mb-4 flex gap-2">
+          <input id="promo-input" type="text" placeholder="Promo code · LAYEMI10" class="h-10 flex-1 rounded-full border border-ink/15 bg-transparent px-4 text-xs uppercase tracking-wider outline-none focus:border-gold" />
+          <button id="promo-apply" class="rounded-full border border-ink px-4 text-[10px] font-semibold uppercase tracking-[0.14em] transition hover:bg-ink hover:text-cream">Apply</button>
+        </div>
+        <p id="promo-note" class="mb-3 hidden text-[11px]"></p>
+        <div class="flex items-center justify-between">
+          <span class="text-xs uppercase tracking-[0.16em] text-ink/50">Subtotal</span>
+          <span id="cart-subtotal" class="font-display text-2xl">₦0</span>
+        </div>
+        <p class="mt-1 text-[10px] text-ink/45">Shipping and taxes calculated at checkout.</p>
+        <button id="checkout-btn" class="btn-primary mt-4 w-full justify-center">Checkout
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></svg>
+        </button>
+        <button class="mt-3 w-full text-center text-[10px] uppercase tracking-[0.18em] text-ink/45 underline-offset-4 hover:text-ink hover:underline" data-close-cart>Continue shopping</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Wishlist drawer -->
+  <div id="wishlist-drawer" class="fixed inset-0 z-[80] hidden">
+    <div class="absolute inset-0 bg-ink/50 backdrop-blur-sm" data-close-wishlist></div>
+    <aside class="drawer-panel absolute inset-y-0 right-0 flex w-[min(94vw,420px)] translate-x-full flex-col bg-cream shadow-2xl transition-transform duration-300">
+      <div class="flex items-center justify-between border-b border-ink/10 px-6 py-5">
+        <div>
+          <h2 class="font-display text-2xl">Wishlist</h2>
+          <p class="mt-0.5 text-[10px] uppercase tracking-[0.18em] text-ink/45">Saved for later</p>
+        </div>
+        <button class="icon-btn" data-close-wishlist aria-label="Close wishlist">✕</button>
+      </div>
+      <div id="wishlist-items" class="flex-1 overflow-y-auto px-6 py-4"></div>
+      <div class="border-t border-ink/10 px-6 py-5">
+        <button id="wishlist-add-all" class="btn-primary w-full justify-center">Add all to bag</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Product modal -->
+  <div id="product-modal" class="fixed inset-0 z-[85] hidden">
+    <div class="absolute inset-0 bg-ink/60 backdrop-blur-sm" data-close-product></div>
+    <div class="absolute inset-0 grid place-items-center overflow-y-auto p-3 sm:p-6">
+      <div class="relative my-auto w-full max-w-4xl overflow-hidden rounded-2xl bg-cream shadow-lift">
+        <button class="absolute right-3 top-3 z-10 grid h-9 w-9 place-items-center rounded-full bg-cream/90 text-lg backdrop-blur transition hover:bg-ink hover:text-cream" data-close-product aria-label="Close product">✕</button>
+        <div id="product-modal-content" class="grid md:grid-cols-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth modal -->
+  <div id="auth-modal" class="fixed inset-0 z-[90] hidden">
+    <div class="absolute inset-0 bg-ink/60 backdrop-blur-sm" data-close-auth></div>
+    <div class="absolute inset-0 grid place-items-center overflow-y-auto p-3 sm:p-6">
+      <div class="relative my-auto w-full max-w-md overflow-hidden rounded-2xl bg-cream p-6 shadow-lift sm:p-8">
+        <button class="absolute right-4 top-4 grid h-8 w-8 place-items-center rounded-full text-ink/50 transition hover:bg-ink/5 hover:text-ink" data-close-auth aria-label="Close">✕</button>
+        <div class="text-center">
+          <p class="eyebrow">LAYEMITURBAN</p>
+          <h2 id="auth-title" class="mt-2 font-display text-3xl">Welcome back</h2>
+          <p id="auth-subtitle" class="mt-1.5 text-xs font-light text-ink/50">Sign in to check out faster and track your orders.</p>
+        </div>
+        <div class="mt-6 flex rounded-full border border-ink/10 bg-sand/50 p-1">
+          <button id="auth-tab-signin" class="auth-tab is-active" data-auth-tab="signin">Sign in</button>
+          <button id="auth-tab-signup" class="auth-tab" data-auth-tab="signup">Create account</button>
+        </div>
+        <form id="auth-form" class="mt-5 space-y-3" novalidate>
+          <div id="auth-name-field" class="hidden">
+            <label class="field-label" for="auth-name">Full name</label>
+            <input id="auth-name" class="field-input" type="text" autocomplete="name" placeholder="Adaeze Okafor" />
+          </div>
+          <div>
+            <label class="field-label" for="auth-email">Email address</label>
+            <input id="auth-email" class="field-input" type="email" autocomplete="email" placeholder="you@email.com" required />
+          </div>
+          <div>
+            <label class="field-label" for="auth-password">Password</label>
+            <input id="auth-password" class="field-input" type="password" autocomplete="current-password" placeholder="At least 6 characters" required />
+          </div>
+          <p id="auth-error" class="hidden rounded-lg bg-wine/10 px-3 py-2 text-[11px] text-wine"></p>
+          <button type="submit" id="auth-submit" class="btn-primary w-full justify-center">Sign in</button>
+        </form>
+        <p class="mt-4 text-center text-[10px] leading-relaxed text-ink/40">By continuing you agree to our terms of service & privacy policy. Your details are stored locally on this device for this demo.</p>
+        <button id="auth-forgot" class="mt-3 w-full text-center text-[10px] uppercase tracking-[0.16em] text-ink/45 hover:text-ink">Forgot password?</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Account modal -->
+  <div id="account-modal" class="fixed inset-0 z-[90] hidden">
+    <div class="absolute inset-0 bg-ink/60 backdrop-blur-sm" data-close-account></div>
+    <div class="absolute inset-0 grid place-items-center overflow-y-auto p-3 sm:p-6">
+      <div class="relative my-auto w-full max-w-2xl overflow-hidden rounded-2xl bg-cream shadow-lift">
+        <div class="flex items-center justify-between border-b border-ink/10 px-6 py-5">
+          <div>
+            <p class="eyebrow">My account</p>
+            <h2 id="account-heading" class="mt-1 font-display text-2xl">Your space</h2>
+          </div>
+          <button class="icon-btn" data-close-account aria-label="Close account">✕</button>
+        </div>
+        <div id="account-body" class="max-h-[78vh] overflow-y-auto p-6"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div id="checkout-modal" class="fixed inset-0 z-[95] hidden">
+    <div class="absolute inset-0 bg-cream"></div>
+    <div class="relative flex h-full flex-col">
+      <div class="border-b border-ink/10 bg-cream/95 backdrop-blur">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
+          <span class="font-display text-xl font-semibold tracking-[0.14em]">LAYEMITURBAN</span>
+          <div class="flex items-center gap-2 text-[9px] uppercase tracking-[0.14em] text-ink/45 sm:gap-3">
+            <span class="flex items-center gap-1.5"><span class="grid h-5 w-5 place-items-center rounded-full bg-ink text-cream" id="checkout-lock">✦</span> Secure checkout</span>
+          </div>
+          <button id="close-checkout" class="icon-btn" aria-label="Close checkout">✕</button>
+        </div>
+      </div>
+      <div class="flex-1 overflow-y-auto">
+        <div class="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:py-12">
+          <!-- Steps -->
+          <div id="checkout-steps" class="mb-8 flex items-center justify-center gap-2 sm:gap-4">
+            <div class="checkout-step is-active" data-step-indicator="1"><span>1</span><p>Details</p></div>
+            <div class="h-px w-8 bg-ink/15 sm:w-16"></div>
+            <div class="checkout-step" data-step-indicator="2"><span>2</span><p>Delivery</p></div>
+            <div class="h-px w-8 bg-ink/15 sm:w-16"></div>
+            <div class="checkout-step" data-step-indicator="3"><span>3</span><p>Payment</p></div>
+          </div>
+          <div class="grid gap-8 lg:grid-cols-[1fr_380px]">
+            <div id="checkout-main"></div>
+            <aside class="order-summary h-fit rounded-2xl border border-ink/10 bg-sand/40 p-5 lg:sticky lg:top-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-[10px] font-semibold uppercase tracking-[0.2em] text-ink/55">Order summary</h3>
+                <span id="summary-count" class="text-[10px] text-ink/45">0 items</span>
+              </div>
+              <div id="summary-items" class="mt-4 max-h-56 space-y-3 overflow-y-auto pr-1"></div>
+              <div class="mt-4 space-y-2 border-t border-ink/10 pt-4 text-xs">
+                <div class="flex justify-between text-ink/60"><span>Subtotal</span><span id="summary-subtotal">₦0</span></div>
+                <div class="flex justify-between text-ink/60"><span>Delivery</span><span id="summary-shipping">—</span></div>
+                <div id="summary-discount-row" class="hidden justify-between text-wine"><span>Discount</span><span id="summary-discount">−₦0</span></div>
+                <div class="flex justify-between border-t border-ink/10 pt-2 font-medium"><span>Total</span><span id="summary-total" class="font-display text-lg">₦0</span></div>
+              </div>
+              <p class="mt-4 flex items-center gap-2 text-[10px] text-ink/40"><span>🔒</span> Encrypted & secure demo checkout</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast-wrap" class="pointer-events-none fixed bottom-5 left-1/2 z-[120] flex w-[min(92vw,420px)] -translate-x-1/2 flex-col gap-2"></div>
+
+  <!-- Scroll top -->
+  <button id="scroll-top" class="fixed bottom-5 right-5 z-30 grid h-11 w-11 translate-y-3 place-items-center rounded-full border border-ink/10 bg-cream/90 opacity-0 shadow-soft backdrop-blur transition-all duration-300 hover:bg-ink hover:text-cream" aria-label="Back to top">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m-6 6 6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

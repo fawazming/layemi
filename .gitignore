@@ -1,0 +1,8 @@
+.opencode/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Original source photography lives in assets/img (optimised copies)
+/*.png
